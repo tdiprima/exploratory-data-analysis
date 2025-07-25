@@ -4,7 +4,7 @@ import pandas as pd
 from flask import Flask, request, redirect, url_for, render_template, flash
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = '../uploads'
+app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB limit
 app.secret_key = "keep-it-secret"  # Needed for flash messages
 
