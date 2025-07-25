@@ -4,7 +4,7 @@ import seaborn as sns
 from datetime import datetime
 
 # Read the CSV file
-df = pd.read_csv('visit_occurrence.csv')
+df = pd.read_csv('./data/visit_occurrence.csv')
 
 # Basic information about the dataset
 print("=== DATASET OVERVIEW ===")
