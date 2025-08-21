@@ -1,6 +1,4 @@
-## This repo is about #3 - things to try myself
-
----
+# This repo is about #3 - things to try myself
 
 ## Summary for:
 [*I Built an AI That Thinks Like a Data Analyst — Then It Went Viral. So I Made It Smarter.*](https://medium.com/data-science-collective/i-built-an-ai-that-thinks-like-a-data-analyst-then-it-went-viral-so-i-made-it-smarter-1f3206a8254b) by Mukundan Sankar
