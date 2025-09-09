@@ -4,10 +4,15 @@ import os
 import pandas as pd
 from flask import Flask, flash, redirect, render_template, request
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "uploads"
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024  # 16 MB limit
-app.secret_key = "keep-it-secret"  # Needed for flash messages
+app.secret_key = os.getenv("SECRET_KEY")  # Needed for flash messages
 
 ALLOWED_EXTENSIONS = {"csv"}
 
@@ -47,4 +52,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
